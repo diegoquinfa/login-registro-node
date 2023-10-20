@@ -2,16 +2,25 @@ import path from "node:path"
 import { projectPath } from "../../config.js"
 
 
-const htmlHome = (req, res) => {
+const renderHome = (req, res) => {
   res.sendFile(path.join(projectPath, "public", "index.html"))
 }
 
-const htmlLogin = (req, res) => {
-  res.sendFile(path.join(projectPath, "public", "pages", "login.html"))
+const renderLogin = (req, res) => {
+  res.sendFile(path.join(projectPath, "public", "pages", "login", "login.html"))
 }
 
+const renderRegister = (req, res) => {
+  res.sendFile(path.join(projectPath, "public", "pages", "register", "register.html"))
+}
+
+const renderAdmin = (req, res) => {
+  res.sendFile(path.join(projectPath, "public", "pages", "admin", "admin.html"))
+}
 
 export {
-  htmlHome,
-  htmlLogin
+  renderHome,
+  renderLogin,
+  renderRegister,
+  renderAdmin
 }

@@ -1,10 +1,12 @@
 import express from "express"
-import { htmlHome, htmlLogin } from "./pages.controller.js"
+import { renderHome, renderLogin, renderRegister, renderAdmin } from "./pages.controller.js"
 
 const routerPages = express.Router()
 
-routerPages.get('/', htmlHome)
-routerPages.get('/login', htmlLogin)
+routerPages.get('/', renderHome)
+routerPages.get('/login', renderLogin)
+routerPages.get('/register', renderRegister)
+routerPages.get('/admin', renderAdmin)
 
 export {
   routerPages
