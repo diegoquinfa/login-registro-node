@@ -1,7 +1,7 @@
-import dotenv from "dotenv"
-import path from "node:path"
-import { fileURLToPath } from "node:url"
-import db from "./db.js"
+import dotenv from 'dotenv'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import db from './db.js'
 
 const thisPath = path.dirname(fileURLToPath(import.meta.url))
 const projectPath = thisPath.split('/').slice(0, -1).join('/')

@@ -1,6 +1,6 @@
-import express from "express"
-import { authorization } from "../../middlewares/authorization.js"
-import { renderHome, renderLogin, renderRegister, renderAdmin } from "./pages.controller.js"
+import express from 'express'
+import { authorization } from '../../middlewares/authorization.js'
+import { renderHome, renderLogin, renderRegister, renderAdmin } from './pages.controller.js'
 
 const routerPages = express.Router()
 

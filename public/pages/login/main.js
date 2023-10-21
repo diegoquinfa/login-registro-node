@@ -10,7 +10,7 @@ document.querySelector('#login-form')
     const res = await fetch('/api/v1/auth/login', {
       method: 'POST',
       headers: {
-        'Content-type': 'application/json',
+        'Content-type': 'application/json'
       },
       body: JSON.stringify({
         user,
@@ -22,7 +22,8 @@ document.querySelector('#login-form')
 
     if (!res.ok) {
       errorMessage.classList.remove('oculto')
-      return errorMessage.textContent = data.message
+      errorMessage.textContent = data.message
+      return
     }
 
     if (data.redirect) {
