@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "user": "sundac",
+      "email": "diegoquinfa@gmail.com",
+      "password": "$2a$05$cRfNBRWNNtWK9dW04cGpfueHK8QaEwmMYQ1nLBFVOOFWtoCEWdGHu"
+    },
+    {
+      "user": "carlos",
+      "email": "carlit2@gmail.com",
+      "password": "$2a$05$qSHSDOjMsaQ2iFPcp4Tm1uiHdDfHtl6kNv3lsqrZ3obbAKmB.b4l."
+    }
+  ]
+}
